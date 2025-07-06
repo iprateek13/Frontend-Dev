@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform & Transition</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+      .outer {
+        width: 500px;
+        height: 500px;
+        background-color: darkgray;
+       
+      }
+      .inner {
+        height: 50px;
+        width: 50px;
+        background-color: blueviolet;
+        transition: 2s ease-in 1s;
+        margin: auto;
+        position: relative;
+        top: 10px;
+      }
+      div .inner:hover{
+        transform: scale(2, 1);
+        top: 300px;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner"></div>
+    </div>
+  </body>
+</html>

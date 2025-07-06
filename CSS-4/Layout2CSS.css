@@ -1,0 +1,74 @@
+.container {
+    margin: 0;
+    padding: 0;
+    border: 2px solid red;
+    background-color: bisque;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+  }
+  .conatiner div {
+    /* background-color: green; */
+    font-size: 1.5em;
+  }
+  .header {
+    grid-column: 1 / span 12;
+    background-color: green;
+  }
+  .sidebar {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 10;
+    background-color: brown;
+
+  }
+  .navigation {
+    grid-column: 4/ span 6;
+    background-color: blueviolet;
+  }
+  .ads {
+    grid-row: 2 / span 10;
+    grid-column: 10 / span 3;
+    background-color: chartreuse;
+  }
+  .main {
+    grid-column: 4 / span 6;
+    grid-row: 3 / span 9;
+    background-color: coral;
+  }
+  .footer {
+    grid-column: 1 / span 12;
+    background-color: red;
+  }
+  @media only screen and (max-width:1024px){
+    .header{
+      grid-column: 1/span 12;
+      background-color: blue;
+    }
+    .navigation{
+      grid-column: 1/span 12;
+      grid-row: 2;
+      background-color: aqua
+    }
+    .sidebar{
+      grid-row:3/span 9 ;
+      grid-column: 1/span 3;
+      background-color: rgb(158, 107, 189);
+    }
+    .main{
+      grid-row: 3/span 9;
+      grid-column: 4 /span 9;
+      background-color: darkolivegreen;
+    }
+    .ads{
+      grid-column: 1/span 3;
+      grid-column: 12;
+      background-color:gold;
+    }
+    .footer{
+      grid-column: 4/span 9;
+      grid-row: 12;
+      background-color: red;
+    }
+  }

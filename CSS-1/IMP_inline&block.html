@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        color: blueviolet;
+        background-color: rgb(42, 165, 165);
+        border: 2px solid yellow;
+        height: 200px;
+        width: 500px;
+        /* in block elements ,padding and margin is applied in both left&right and top and bottom direction as specified.       */
+        padding: 50px;
+        margin: 20px;
+      }
+      span {
+        color: rgb(78, 16, 223);
+        border: 2px solid black;
+        /* width and doesn't apply on inline elements */
+        height: 50px;
+        width: 100px;
+        /* in inline elements, padding and margin are only applied on the left nad right side. */
+        padding: 20px;
+        margin: 20px;
+        /* background-color: yellow; */
+      }
+      div:hover {
+        color: red;
+      }
+      div::first-letter {
+        color: goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illo sunt,
+      modi obcaecati amet aperiam magni repellendus dignissimos dolores dolor
+      eveniet dolorum officiis deserunt. Commodi, repudiandae ratione? Lorem
+      ipsum dolor sit amet consectetuadipisicing elit. Saepe in enim
+      necessitatibus ipsa, voluptatem <span>iste at veritatis</span> repellat
+      esse nesciunt culpa exercitatione officia consequuntur voluptas d Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Magni, ea aut. Magnam
+      architecto voluptatum tempora quas temporibus quia tempore aperiam nemo
+      dicta, sint, animi odit at aspernatur, id error sapiente.ignissimos.
+      Commodi illum tenetur, possimus praesentium ratione officiis?
+    </div>
+  </body>
+</html>

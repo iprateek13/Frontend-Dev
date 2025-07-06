@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      @keyframes animation {
+        0% {
+          color: aqua;
+          font-size: 35px;
+          background-color: yellow;
+          width: 250px;
+        }
+        50% {
+          color: blue;
+          font-size: 40px;
+          background-color:red ;
+          width: 300px;
+        }
+        100% {
+          color: brown;
+          font-size: 45px;
+          background-color:chartreuse ;
+          width: 350px;
+        }
+      }
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(216, 137, 80);
+        font-size: 30px;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode;              */
+        animation: animation 2s linear 2s 3 alternate ;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">hyyy div</div>
+  </body>
+</html>

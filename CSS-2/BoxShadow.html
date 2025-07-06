@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        height: 150px;
+        background-color: yellow;
+        margin: 0 auto;
+        box-shadow: 5px 5px 20px red;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+      button{
+        width: 150px;
+        /* height: 150px; */
+        margin-left: 124px;
+        margin-top: 20px;
+        background-color: yellow;
+        color: red;
+        font-size: 20px;
+        border-radius: 20px;
+        padding: 1em;
+        box-shadow: 5px 5px 5px rgb(57, 55, 55);
+      }
+      button:hover{
+        transition:width 1s linear 1s;
+        width: 200px;
+        /* height: 0px; */
+      }
+      div:hover{
+        width: 550px;
+        height: 200px;
+        background-color: coral;
+        box-shadow: 7px 7px 30px red;
+        font-size: 25px;
+        border-radius: 15px;
+        transition: width 1s,height 1s;
+        transition-timing-function: linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="color: darkblue">
+      The box-shadow CSS property adds shadow effects around an element's frame.
+      You can set multiple effects separated by commas. A box shadow is
+      described by X and Y offsets relative to the element, blur and spread
+      radius, and color.
+    </div>
+    <button><b>Login</b></button>
+  </body>
+</html>

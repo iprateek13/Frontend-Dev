@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #face {
+      background-color: yellow;
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+    }
+    #eye1,
+    #eye2 {
+      background-color: black;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      top: 50px;
+      left: 55px;
+    }
+    #eye2{
+left: 160px;
+    }
+
+    #mouth {
+      background-color: rgb(150, 46, 8);
+      height: 60px;
+      width: 140px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: absolute;
+      top: 145px;
+      left: 60px;
+    }
+  </style>
+  <body>
+    <div id="face">
+      <div id="eye1"></div>
+      <div id="eye2"></div>
+      <div id="mouth"></div>
+    </div>
+  </body>
+</html>

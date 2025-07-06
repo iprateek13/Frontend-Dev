@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        width: 400px;
+        height: 400px;
+        border: 2px solid red;
+        background-color: yellow;
+        font-size: 20px;
+        margin: 60px;
+      }
+      #inner {
+        width: 90px;
+        height: 170px;
+        border: 2px solid black;
+        background-color: chartreuse;
+        /* in case of em, only font-size is relative to the font size of its elements. */
+        font-size: 2em;
+        /* and other propeerties is relative to is element itself */
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+      #button {
+        background-color: yellow;
+        color: red;
+        border-radius: 10px;
+        border: 2px solid green;
+        /* padding and margin are relative to the font-size */
+        font-size: 20px;
+        padding: 1em;
+        margin: 2em;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      this is outer.
+      <div id="inner">this is inner</div>
+      <button id="button"><i>Sign up</i></button>
+  </body>
+</html>

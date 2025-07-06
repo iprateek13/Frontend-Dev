@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        /* align-content: center; */
+        /* when there are more than two rows is in the container due to overflow of items then we use "align-content" */
+        /* there is no justify-items in flex-box */
+        /* flex-flow: <flex-direction> ,<flex-wrap> */
+        /* flex-flow: column wrap; */
+        row-gap: 20px;
+        column-gap: 30px;
+        gap:10px 30px;
+      }
+      .item {
+        width: 50px;
+        height: 50px;
+        background-color: blueviolet;
+        border: 2px solid;
+        flex-grow: 1;
+        margin: 5px; 
+         /* justify-content: center; */
+        /* display: inline-block; */
+        align-self:flex-end;
+      }
+      .order-1{
+        order: 3;
+      }
+      .order-3{
+        order: 1;
+      }
+      .order-2{
+        order: 2;
+      }
+      .item-1{
+        flex-grow: 2;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-1  item">ITEM</div>
+      <div class="item order-1">1</div>
+      <div class="item order-2">2</div>
+      <div class="item order-3">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+      <div class="item">21</div>
+      <div class="item">22</div>
+      <div class="item">23</div>
+      <div class="item">24</div>
+      <div class="item">25</div>
+      <div class="item">26</div>
+      <div class="item">27</div>
+      <div class="item">28</div>
+      <div class="item">29</div>
+      <div class="item">30</div>
+      <!-- <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">7</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">8</div>
+      <div class="item">3</div>
+      <div class="item">8</div> -->
+    </div>
+  </body>
+</html>
